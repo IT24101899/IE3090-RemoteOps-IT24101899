@@ -1,0 +1,103 @@
+[2026-10-04 12:50:56] === RemoteOps Agent starting port=9410 SID=9981 ===
+[2026-10-04 12:50:56] Listening on port 9410
+[2026-10-04 12:54:21] CONNECTED 127.0.0.1:51624
+[2026-10-04 12:54:42] CMD [127.0.0.1:51624] AUTH OPS-1899
+[2026-10-04 12:54:42] AUTH OK from 127.0.0.1:51624
+[2026-10-04 12:56:08] CMD [127.0.0.1:51624] SYSINFO
+[2026-10-04 12:56:08] SYSINFO -> cpu=0.02 mem=1381 uptime=6266
+[2026-10-04 12:56:13] CMD [127.0.0.1:51624] LISTPROC
+[2026-10-04 12:56:13] LISTPROC -> ______1_systemd,______2_kthreadd,______3_pool_workqueue_release,______4_kworker/R-rcu_gp,______5_kworker/R-sync_wq,______6_kworker/R-kvfree_rcu_reclaim,______7_kworker/R-slub_flushwq,______8_kworker/R-netns,______9_kworker/0:0-ata_sff,_____12_kworker/u16:0-events_unbound,_____13_kworker/u16:1-ipv6_addrconf,_____14_kworker/R-mm_percpu_wq,_____15_ksoftirqd/0,_____16_rcu_preempt,_____17_rcu_exp_par_gp_kthread_worker/0,_____18_rcu_exp_gp_kthread_worker,_____19_migration/0,_____20_idle_inject/0,_____21_cpuhp/0,_____22_cpuhp/1,_____23_idle_inject/1,_____24_migration/1,_____25_ksoftirqd/1,_____28_cpuhp/2,_____29_idle_inject/2,_____30_migration/2,_____31_ksoftirqd/2,_____33_kworker/2:0H-events_highpri,_____34_cpuhp/3,_____35_idle_inject/3,_____36_migration/3,_____37_ksoftirqd/3,_____40_kworker/u17:0-events_unbound,_____45_kworker/u19:1-events_unbound,_____47_kdevtmpfs,_____48_kworker/R-inet_frag_wq,_____49_rcu_tasks_kthread,_____50_rcu_tasks_rude_kthread,_____51_rcu_tasks_trace_kthread,_____52_kworker/u20:1-flush-253:0
+[2026-10-04 12:56:21] CMD [127.0.0.1:51624] EXEC DATE
+[2026-10-04 12:56:21] EXEC DATE -> Sun Oct  4 12:56:21 PM EDT 2026
+[2026-10-04 12:56:42] CMD [127.0.0.1:51624] EXEC HOSTNAME
+[2026-10-04 12:56:42] EXEC HOSTNAME -> 192.168.1.6
+[2026-10-04 12:57:48] CMD [127.0.0.1:51624] PUT testfile.txt 37
+[2026-10-04 12:57:48] PUT testfile.txt (37 bytes) from 127.0.0.1:51624
+[2026-10-04 12:58:22] CMD [127.0.0.1:51624] GET testfile.txt
+[2026-10-04 12:58:22] GET testfile.txt (37 bytes) to 127.0.0.1:51624
+[2026-10-04 13:32:27] CMD [127.0.0.1:51624] MONITOR START 9500
+[2026-10-04 13:32:27] MONITOR START udp_port=9500 peer=127.0.0.1
+[2026-10-04 13:34:21] DISCONNECTED 127.0.0.1:51624
+[2026-10-04 13:35:33] CONNECTED 127.0.0.1:37428
+[2026-10-04 13:35:47] CMD [127.0.0.1:37428] AUTH OPS-1899
+[2026-10-04 13:35:47] AUTH OK from 127.0.0.1:37428
+[2026-10-04 13:36:11] CMD [127.0.0.1:37428] MONITOR START 9500
+[2026-10-04 13:36:11] MONITOR START udp_port=9500 peer=127.0.0.1
+[2026-10-04 13:36:25] DISCONNECTED 127.0.0.1:37428
+[2026-10-04 13:43:06] CONNECTED 127.0.0.1:42500
+[2026-10-04 13:43:13] CMD [127.0.0.1:42500] AUTH OPS-1899
+[2026-10-04 13:43:13] AUTH OK from 127.0.0.1:42500
+[2026-10-04 13:43:31] CMD [127.0.0.1:42500] MONITOR START 9500
+[2026-10-04 13:43:31] MONITOR START udp_port=9500 peer=127.0.0.1
+[2026-10-04 13:44:18] DISCONNECTED 127.0.0.1:42500
+[2026-10-04 13:48:43] CONNECTED 127.0.0.1:57060
+[2026-10-04 13:49:04] CMD [127.0.0.1:57060] SYSINFO
+[2026-10-04 13:49:04] Pre-auth command rejected: SYSINFO
+[2026-10-04 13:49:12] CMD [127.0.0.1:57060] AUTH WRONGTOKEN
+[2026-10-04 13:49:12] AUTH FAILED from 127.0.0.1:57060
+[2026-10-04 13:49:34] CMD [127.0.0.1:57060] AUTH OPS-1899
+[2026-10-04 13:49:34] AUTH OK from 127.0.0.1:57060
+[2026-10-04 13:49:58] CMD [127.0.0.1:57060] AUTH OPS-1899
+[2026-10-04 13:50:10] CMD [127.0.0.1:57060] EXEC rm
+[2026-10-04 13:50:10] EXEC rejected: rm
+[2026-10-04 13:52:10] CMD [127.0.0.1:57060] QUIT
+[2026-10-04 13:52:10] QUIT from 127.0.0.1:57060
+[2026-10-04 13:52:10] DISCONNECTED 127.0.0.1:57060
+[2026-10-04 13:52:31] CONNECTED 127.0.0.1:39482
+[2026-10-04 13:52:31] CMD [127.0.0.1:39482] AUTH OPS-1899
+[2026-10-04 13:52:31] AUTH OK from 127.0.0.1:39482
+[2026-10-04 13:52:31] CONNECTED 127.0.0.1:39492
+[2026-10-04 13:52:31] CONNECTED 127.0.0.1:39496
+[2026-10-04 13:52:31] CMD [127.0.0.1:39496] AUTH OPS-1899
+[2026-10-04 13:52:31] AUTH OK from 127.0.0.1:39496
+[2026-10-04 13:52:31] CMD [127.0.0.1:39492] AUTH OPS-1899
+[2026-10-04 13:52:31] AUTH OK from 127.0.0.1:39492
+[2026-10-04 13:52:31] CONNECTED 127.0.0.1:39510
+[2026-10-04 13:52:31] CMD [127.0.0.1:39510] AUTH OPS-1899
+[2026-10-04 13:52:31] AUTH OK from 127.0.0.1:39510
+[2026-10-04 13:52:31] CONNECTED 127.0.0.1:39514
+[2026-10-04 13:52:31] CMD [127.0.0.1:39514] AUTH OPS-1899
+[2026-10-04 13:52:31] AUTH OK from 127.0.0.1:39514
+[2026-10-04 13:52:32] CMD [127.0.0.1:39482] SYSINFO
+[2026-10-04 13:52:32] SYSINFO -> cpu=0.01 mem=1384 uptime=9650
+[2026-10-04 13:52:32] CMD [127.0.0.1:39496] SYSINFO
+[2026-10-04 13:52:32] CMD [127.0.0.1:39492] SYSINFO
+[2026-10-04 13:52:32] SYSINFO -> cpu=0.01 mem=1384 uptime=9650
+[2026-10-04 13:52:32] SYSINFO -> cpu=0.01 mem=1384 uptime=9650
+[2026-10-04 13:52:32] CMD [127.0.0.1:39510] SYSINFO
+[2026-10-04 13:52:32] SYSINFO -> cpu=0.01 mem=1384 uptime=9650
+[2026-10-04 13:52:32] CMD [127.0.0.1:39514] SYSINFO
+[2026-10-04 13:52:32] SYSINFO -> cpu=0.01 mem=1384 uptime=9650
+[2026-10-04 13:52:33] CMD [127.0.0.1:39492] QUIT
+[2026-10-04 13:52:33] QUIT from 127.0.0.1:39492
+[2026-10-04 13:52:33] DISCONNECTED 127.0.0.1:39492
+[2026-10-04 13:52:33] CMD [127.0.0.1:39496] QUIT
+[2026-10-04 13:52:33] QUIT from 127.0.0.1:39496
+[2026-10-04 13:52:33] DISCONNECTED 127.0.0.1:39496
+[2026-10-04 13:52:33] CMD [127.0.0.1:39510] QUIT
+[2026-10-04 13:52:33] QUIT from 127.0.0.1:39510
+[2026-10-04 13:52:33] DISCONNECTED 127.0.0.1:39510
+[2026-10-04 13:52:33] CMD [127.0.0.1:39482] QUIT
+[2026-10-04 13:52:33] CMD [127.0.0.1:39514] QUIT
+[2026-10-04 13:52:33] QUIT from 127.0.0.1:39514
+[2026-10-04 13:52:33] DISCONNECTED 127.0.0.1:39514
+[2026-10-04 13:52:33] QUIT from 127.0.0.1:39482
+[2026-10-04 13:52:33] DISCONNECTED 127.0.0.1:39482
+[2026-10-04 13:54:40] CONNECTED 127.0.0.1:39408
+[2026-10-04 13:54:47] CMD [127.0.0.1:39408] AUTH OPS-1899
+[2026-10-04 13:54:47] AUTH OK from 127.0.0.1:39408
+[2026-10-04 13:54:52] CMD [127.0.0.1:39408] SYSINFO
+[2026-10-04 13:54:52] SYSINFO -> cpu=0.16 mem=1384 uptime=9790
+[2026-10-04 13:54:59] CMD [127.0.0.1:39408] LISTPROC
+[2026-10-04 13:54:59] LISTPROC -> ______1_systemd,______2_kthreadd,______3_pool_workqueue_release,______4_kworker/R-rcu_gp,______5_kworker/R-sync_wq,______6_kworker/R-kvfree_rcu_reclaim,______7_kworker/R-slub_flushwq,______8_kworker/R-netns,_____12_kworker/u16:0-events_unbound,_____13_kworker/u16:1-ipv6_addrconf,_____14_kworker/R-mm_percpu_wq,_____15_ksoftirqd/0,_____16_rcu_preempt,_____17_rcu_exp_par_gp_kthread_worker/0,_____18_rcu_exp_gp_kthread_worker,_____19_migration/0,_____20_idle_inject/0,_____21_cpuhp/0,_____22_cpuhp/1,_____23_idle_inject/1,_____24_migration/1,_____25_ksoftirqd/1,_____28_cpuhp/2,_____29_idle_inject/2,_____30_migration/2,_____31_ksoftirqd/2,_____33_kworker/2:0H-events_highpri,_____34_cpuhp/3,_____35_idle_inject/3,_____36_migration/3,_____37_ksoftirqd/3,_____47_kdevtmpfs,_____48_kworker/R-inet_frag_wq,_____49_rcu_tasks_kthread,_____50_rcu_tasks_rude_kthread,_____51_rcu_tasks_trace_kthread,_____52_kworker/u20:1-kvfree_rcu_reclaim,_____53_kauditd,_____54_khungtaskd,_____55_oom_reaper
+[2026-10-04 13:55:03] CMD [127.0.0.1:39408] EXEC DATE
+[2026-10-04 13:55:03] EXEC DATE -> Sun Oct  4 01:55:03 PM EDT 2026
+[2026-10-04 13:55:09] CMD [127.0.0.1:39408] EXEC HOSTNAME
+[2026-10-04 13:55:09] EXEC HOSTNAME -> 192.168.1.6
+[2026-10-04 13:55:15] CMD [127.0.0.1:39408] PUT testfile.txt 37
+[2026-10-04 13:55:15] PUT testfile.txt (37 bytes) from 127.0.0.1:39408
+[2026-10-04 13:55:24] CMD [127.0.0.1:39408] GET testfile.txt
+[2026-10-04 13:55:24] GET testfile.txt (37 bytes) to 127.0.0.1:39408
+[2026-10-04 13:55:33] CMD [127.0.0.1:39408] QUIT
+[2026-10-04 13:55:33] QUIT from 127.0.0.1:39408
+[2026-10-04 13:55:33] DISCONNECTED 127.0.0.1:39408
