@@ -1,0 +1,16 @@
+# Makefile_899 — IE3090 RemoteOps — IT24101899
+CC      = gcc
+CFLAGS  = -Wall -Wextra -pthread -O2
+
+all: agent_899 controller_899
+
+agent_899: agent_899.c
+	$(CC) $(CFLAGS) -o agent_899 agent_899.c
+
+controller_899: controller_899.c
+	$(CC) $(CFLAGS) -o controller_899 controller_899.c
+
+clean:
+	rm -f agent_899 controller_899
+
+.PHONY: all clean
